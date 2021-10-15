@@ -906,3 +906,64 @@ body {font-family: Arial;}
 .flip-container .swiper-slide-next .flip-zodiac-sign {
   transform: rotateY(180deg);
 }
+
+
+@media only screen and (max-width: 1024px){
+   
+}
+@media only screen and (max-width: 768px){
+      
+}
+/* 450 或414 可以自己選擇 */
+@media only screen and (max-width: 450px){
+  main section.backImage{
+    background-image: url(./圖片/背景物件圖/section1\ background-image-2.jpg);
+    height: auto;
+    max-width: 100%;
+    background-size: contain;
+    background-position: center;
+    } 
+
+    .pageTwoSection{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+  }
+    .leftArea{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    }
+    
+    .leftAreaImg{
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    
+.rightArea{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#moveImg{
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-image:url(./圖片/背景物件圖/回頂端圖標.png) ;
+  /* width: 50px;
+  height: 50px; */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  z-index:11;
+}
+#section6{display: none;}
+}
