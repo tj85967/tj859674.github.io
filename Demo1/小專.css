@@ -915,7 +915,7 @@ body {font-family: Arial;}
       
 }
 /* 450 或414 可以自己選擇 */
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 414px){
   main section.backImage{
     background-image: url(./圖片/背景物件圖/section1\ background-image-2.jpg);
     height: auto;
