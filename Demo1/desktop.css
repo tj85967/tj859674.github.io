@@ -181,8 +181,9 @@ margin-top: -2px;
   right: 0px;
   bottom: 0px;
   background-image:url(./圖片/背景物件圖/回頂端圖標.png) ;
-  width: 140px;
-  height: 140px;
+  width: 80px;
+  height: 80px;
+  font-size: 14px;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -693,13 +694,6 @@ body {font-family: Arial;}
   background: linear-gradient(270deg, rgba(19,26,40,1) 0%, rgba(87,103,134,1) 37%, rgba(135,117,128,1) 71%, rgba(157,146,148,1) 100%);
 }
 
-/* .midThing{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80vh;
-} */
-
 .set5Div button{
   display: flex;
   align-items: center;
@@ -961,11 +955,40 @@ body {font-family: Arial;}
   transform: rotateY(180deg);
 }
 
-@media only screen and (max-width: 1024px){
-   
-}
-@media only screen and (max-width: 768px){
-      
+@media only screen and (max-width: 1280px){
+  .rightAreaText h2{
+    margin: 20px 0;
+  }
+  .rightAreaText p{
+    font-size: 1.2rem;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 0 25px;
+  }
+
+  #section3 > h2{
+    margin-top: 25px;
+  } 
+  #starSignIntro{
+    padding-top: 25px;
+  }
+  .starSignEle{
+    max-width: 299px;
+    max-height: 419px;
+  }
+
+  .starSignImg{
+    max-width: 299px;
+    max-height: 419px;
+  }
+  #section5 > h2{
+    margin-top: 22px;
+  } 
+  #leftDiv,#rightDiv{
+    width: 274px;
+    height: 152px;
+  }
 }
 /* 450 或414 可以自己選擇 */
 @media only screen and (max-width: 450px){
@@ -988,6 +1011,14 @@ body {font-family: Arial;}
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .nameText{
+    margin-top:50% ;
+  }
+  
+  .jobText{
+    margin-top:-130% ;
   }
 
   #one{
@@ -1227,8 +1258,6 @@ body {font-family: Arial;}
   z-index:11;
 }
 
-#section6{display: none;}
-
 .starSignImg{
     max-width: 299px;
     max-height: 419px;
@@ -1325,4 +1354,29 @@ body {font-family: Arial;}
     font-size: 16px;
   }
 
+  #section6{
+    flex-wrap: wrap;
+    height: 200px;
+  }
+
+  .smitem{
+    justify-content: center;
+  }
+  #item1{
+    margin-left: 0px;
+  }
+  .footerDiv{
+    width:100%;
+  }
+  #item2{
+    display: none;
+  }
+  #item3{
+    display: none;
+  }
+  #sectionFooter{
+    height: 25px;
+    font-size: 12px;
+    text-align: center;
+  }
 }
