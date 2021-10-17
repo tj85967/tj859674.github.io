@@ -968,7 +968,7 @@ body {font-family: Arial;}
       
 }
 /* 450 或414 可以自己選擇 */
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 450px){
 
   div.animation{
     display: none;
