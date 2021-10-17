@@ -18,8 +18,24 @@ div.animation{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+div.animationMob{
+  display: none;
+}
+
+.nameText{
+  width: 100vw;
+  text-align: center;
+  margin-top:10% ;
+}
+
+.jobText{
+  width: 100vw;
+  text-align: center;
+  margin-top:-22% ;
+}
 
 #one{
   stroke-dasharray:423px;
@@ -87,40 +103,47 @@ div.animation{
   animation: fadeInside 0.6s ease-in forwards 3.8s;
 }
 #fourteen{
-  stroke-dasharray:1376px;
-  stroke-dashoffset: 1376px;
+  stroke-dasharray:464px;
+  stroke-dashoffset: 464px;
   animation: fadeInside 0.6s ease-in forwards 0.7s;
 }
 #fifteen{
-  stroke-dasharray:1124px;
-  stroke-dashoffset: 1124px;
-  animation: fadeInside 0.6s ease-in forwards 1.2s;
+  stroke-dasharray:211px;
+  stroke-dashoffset: 211px;
+  animation: fadeInside 0.6s ease-in forwards 1.1s;
 }
 #sixteen{
-  stroke-dasharray:1165px;
-  stroke-dashoffset: 1165px;
-  animation: fadeInside 0.6s ease-in forwards 1.7s;
+  stroke-dasharray:249px;
+  stroke-dashoffset: 249px;
+  animation: fadeInside 0.6s ease-in forwards 1.5s;
 }
 #seventeen{
-  stroke-dasharray:1381px;
-  stroke-dashoffset: 1381px;
-  animation: fadeInside 0.6s ease-in forwards 2.2s;
+  stroke-dasharray:464px;
+  stroke-dashoffset: 464px;
+  animation: fadeInside 0.6s ease-in forwards 1.9s;
 }
 #eighteen{
-  stroke-dasharray:601px;
-  stroke-dashoffset: 601px;
-  animation: fadeInside 0.6s ease-in forwards 2.7s;
+  stroke-dasharray:356px;
+  stroke-dashoffset: 356px;
+  animation: fadeInside 0.6s ease-in forwards 2.3s;
 }
 #nineteen{
-  stroke-dasharray:1274px;
-  stroke-dashoffset: 1274px;
-  animation: fadeInside 0.6s ease-in forwards 3.2s;
+  stroke-dasharray:1244px;
+  stroke-dashoffset: 1244px;
+  animation: fadeInside 0.6s ease-in forwards 2.7s;
 }
 #twenty{
-  stroke-dasharray:1202px;
-  stroke-dashoffset: 1202px;
-  animation: fadeInside 0.6s ease-in forwards 3.7s;
+  stroke-dasharray:965px;
+  stroke-dashoffset: 965px;
+  animation: fadeInside 0.6s ease-in forwards 3.1s;
 }
+
+#twentyone{
+  stroke-dasharray:1124px;
+  stroke-dashoffset: 1124px;
+  animation: fadeInside 0.6s ease-in forwards 3.5s;
+}
+
 
 svg{
   animation: fill 1s ease-in forwards 3.8s;
@@ -169,23 +192,49 @@ margin-top: -2px;
   z-index:11;
 }
 
+.backImage ul{
+  list-style: none;
+  padding-left: 0;
+}
 
-.backImage > nav{
-    width: 100%;
-    height: 50px;
+.menu a{
+  text-decoration: none;
+}
+
+.menuNav{
+  width: 100%;
+  height: 50px;
+  line-height: 100px;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+input{
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+  .menu {
     display: flex;
     justify-content: center;
-}
-
-.backImage nav > a{
-    height: 50px;
-    color:white;
+    clear: both;
+  }
+  
+  li {
     text-align: center;
-    line-height: 50px;
-    text-decoration: none;
+  }
+   .menu a {
     margin: 15px 65px 0px 65px;
-    
-}
+    font-size: 18px;
+    color: #fff;
+  }
+
 #move{
   position: relative;
   width: 100%;
@@ -291,12 +340,14 @@ section .star.star8{
 .rightAreaText h2{
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin-top: 60px;
 }
 .rightAreaText p{
   display: flex;
   justify-content: center;
-  padding: 0 25px;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  padding: 0 75px;
 }
 
 .rightAreaImg{ 
@@ -327,7 +378,7 @@ body {font-family: Arial;}
   #section3 > h2{
   display: flex ;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 35px;
   color: white;
 } 
 
@@ -403,8 +454,11 @@ body {font-family: Arial;}
     position:relative;
     top: 25px;
     margin: 0 auto 0 auto;
-    width: 70%;
+    width: 75%;
     height:85%;
+}
+#divContainerMob{
+    display: none;
 }
 
 .tabcontent img{
@@ -446,7 +500,7 @@ body {font-family: Arial;}
 #starSignIntro{
   display: flex ;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 35px;
   color: white;
   margin-bottom: 50px;
 }
@@ -478,8 +532,8 @@ body {font-family: Arial;}
 .starSignEle{
   position: relative;
   overflow: hidden;
-  max-width: 299px;
-  max-height: 419px;
+  max-width: 374px;
+  max-height: 524px;
 }
 
 .starSignEle span:nth-child(1){
@@ -567,8 +621,8 @@ body {font-family: Arial;}
 }
 
 .starSignImg{
-  max-width: 299px;
-  max-height: 419px;
+  max-width: 374px;
+  max-height: 524px;
   object-fit:contain;
 }
 
@@ -617,15 +671,15 @@ body {font-family: Arial;}
 #section5 > h2{
   display: flex ;
   justify-content: center;
-  margin-top: 22px;
+  margin-top:35px;
   color:black;
 } 
 
 #leftDiv,#rightDiv{
   align-items: center;
   justify-content: center;
-  width: 274px;
-  height: 152px;
+  width: 380px;
+  height: 190px;
 }
 #leftDiv{
   border-radius: 0px 100px 100px 0px;
@@ -639,12 +693,12 @@ body {font-family: Arial;}
   background: linear-gradient(270deg, rgba(19,26,40,1) 0%, rgba(87,103,134,1) 37%, rgba(135,117,128,1) 71%, rgba(157,146,148,1) 100%);
 }
 
-.midThing{
+/* .midThing{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80vh;
-}
+} */
 
 .set5Div button{
   display: flex;
@@ -907,7 +961,6 @@ body {font-family: Arial;}
   transform: rotateY(180deg);
 }
 
-
 @media only screen and (max-width: 1024px){
    
 }
@@ -916,40 +969,248 @@ body {font-family: Arial;}
 }
 /* 450 或414 可以自己選擇 */
 @media only screen and (max-width: 414px){
+
+  div.animation{
+    display: none;
+  }
+  
+  div.animationMob{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./圖片/背景物件圖/前導動畫-mob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #one{
+    stroke-dasharray:169px;
+    stroke-dashoffset: 169px;
+    animation: fadeInside 0.6s ease-in forwards 0.2s;
+  }
+  #two{
+    stroke-dasharray:92px;
+    stroke-dashoffset: 92px;
+    animation: fadeInside 0.6s ease-in forwards 0.5s;
+  }
+  #three{
+    stroke-dasharray:152px;
+    stroke-dashoffset: 152px;
+    animation: fadeInside 0.6s ease-in forwards 0.8s;
+  }
+  #four{
+    stroke-dasharray:140px;
+    stroke-dashoffset: 140px;
+    animation: fadeInside 0.6s ease-in forwards 1.1s;
+  }
+  #five{
+    stroke-dasharray:156px;
+    stroke-dashoffset: 156px;
+    animation: fadeInside 0.6s ease-in forwards 1.4s;
+  }
+  #six{
+    stroke-dasharray:144px;
+    stroke-dashoffset: 144px;
+    animation: fadeInside 0.6s ease-in forwards 1.7s;
+  }
+  #seven{
+    stroke-dasharray:170px;
+    stroke-dashoffset: 170px;
+    animation: fadeInside 0.6s ease-in forwards 2.0s;
+  }
+  #eight{
+    stroke-dasharray:152px;
+    stroke-dashoffset: 152px;
+    animation: fadeInside 0.6s ease-in forwards 2.3s;
+  }
+  #nine{
+    stroke-dasharray:87px;
+    stroke-dashoffset: 87px;
+    animation: fadeInside 0.6s ease-in forwards 2.6s;
+  }
+  #ten{
+    stroke-dasharray:122px;
+    stroke-dashoffset: 122px;
+    animation: fadeInside 0.6s ease-in forwards 2.9s;
+  }
+  #eleven{
+    stroke-dasharray:93px;
+    stroke-dashoffset: 93px;
+    animation: fadeInside 0.6s ease-in forwards 3.2s;
+  }
+  #twelve{
+    stroke-dasharray:156px;
+    stroke-dashoffset: 156px;
+    animation: fadeInside 0.6s ease-in forwards 3.5s;
+  }
+  #thirteen{
+    stroke-dasharray:138px;
+    stroke-dashoffset: 138px;
+    animation: fadeInside 0.6s ease-in forwards 3.8s;
+  }
+  #fourteen{
+    stroke-dasharray:180px;
+    stroke-dashoffset: 180px;
+    animation: fadeInside 0.6s ease-in forwards 0.7s;
+  }
+  #fifteen{
+    stroke-dasharray:93px;
+    stroke-dashoffset: 93px;
+    animation: fadeInside 0.6s ease-in forwards 1.1s;
+  }
+  #sixteen{
+    stroke-dasharray:99px;
+    stroke-dashoffset: 99px;
+    animation: fadeInside 0.6s ease-in forwards 1.5s;
+  }
+  #seventeen{
+    stroke-dasharray:180px;
+    stroke-dashoffset: 180px;
+    animation: fadeInside 0.6s ease-in forwards 1.9s;
+  }
+  #eighteen{
+    stroke-dasharray:140px;
+    stroke-dashoffset: 140px;
+    animation: fadeInside 0.6s ease-in forwards 2.3s;
+  }
+  #nineteen{
+    stroke-dasharray:447px;
+    stroke-dashoffset: 447px;
+    animation: fadeInside 0.6s ease-in forwards 2.7s;
+  }
+  #twenty{
+    stroke-dasharray:365px;
+    stroke-dashoffset: 365px;
+    animation: fadeInside 0.6s ease-in forwards 3.1s;
+  }
+  
+  #twentyoneMob{
+    stroke-dasharray:400px;
+    stroke-dashoffset: 400px;
+    animation: fadeInside 0.6s ease-in forwards 3.5s;
+  }
+  
+
+
+
   main section.backImage{
-    background-image: url(./圖片/背景物件圖/section1\ background-image-2.jpg);
-    height: auto;
-    max-width: 100%;
-    background-size: contain;
+    background-image: url(./圖片/背景物件圖/section1\ background-image\ 2-手機板.jpg);
+    height:100vh;
+    width: 100%;
+    background-size: cover;
     background-position: center;
     } 
 
-    .pageTwoSection{
+    /* section1 */
+    .backImage ul{
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .menu a{
+      text-decoration: none;
+    }
+
+    .menuNav{
       width: 100%;
-      height: auto;
-      display: flex;
-      flex-wrap: wrap;
+      height: 50px;
+      background: rgba(14, 23, 41, 0.6);
+      box-shadow: 0px 1px 2px 0E1729;
+      line-height: 50px;
+    }
+    .menuNav::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    input{
+      display: none;
+    }
+    input:checked ~ .menu{
+      max-height: 250px;
+    }
+    label {
+      display: inline;
+      float: right;
+      padding-right: 30px;
+      line-height: 50px;
+    }
+    .menuImg {
+        width: 30px;   
+        vertical-align: middle;
+      }
+      .menu {
+        clear: both;
+        background: rgba(80, 59, 119, 0.6);
+      }
+      .menu{
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: .5s;
+      }
+      li {
+        text-align: center;
+        border-bottom: 1px solid #efefef;
+      }
+       .menu a {
+        display: block;
+        font-size: 18px;
+        color: #fff;
+        margin: 0px;
+      }
+      a:hover {
+        background:rgba(239, 239, 239, 0.6) ;
+        color: #503B77;
+      }
+
+      /* section2 */
+    .pageTwoSection{
+      flex-wrap: wrap-reverse;
   }
     .leftArea{
       width: 100%;
-      height: 100vh;
-      display: flex;
+      height: 50vh;
     }
     
     .leftAreaImg{
       height: auto;
       max-width: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
 
     
 .rightArea{
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
+.rightAreaText{
+  height: 50%;
+}
+.rightAreaImg{ 
+  height: 50%;
+}
+
+.rightAreaText p{
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.rightAreaText h2{
+  margin-top: 35px;
+}
+.rightAreaText p{
+  margin-top: 50px;
+}
+
 #moveImg{
   position: fixed;
   right: 0px;
@@ -965,5 +1226,103 @@ body {font-family: Arial;}
   color: black;
   z-index:11;
 }
+
 #section6{display: none;}
+
+.starSignImg{
+    max-width: 299px;
+    max-height: 419px;
+    object-fit:contain;
+  }
+  .starSignEle{
+    position: relative;
+    overflow: hidden;
+    max-width: 299px;
+    max-height: 419px;
+  }
+
+  /* section3 */
+  #section3{
+    height: 115vh;
+  }
+  #divContainer{
+    display: none;
+  }
+  #divContainerMob{
+    display: block;
+    position:relative;
+    top: 25px;
+    margin: 0 auto 0 auto;
+    width: 75%;
+    height:85%;
+  }
+
+  .tab {
+    flex-wrap: wrap;
+  }
+
+  .tabcontentMob {
+    display: none;
+    padding: 0px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+
+  .tabcontentMob img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* section5 */
+  .swiper-container {
+    width: 90%;
+  }
+
+  #leftDiv,#rightDiv{
+    width: 190px;
+    height: 95px;
+  }
+
+  .swiper-button-prev {
+    left:27%;
+    top: 25%;
+  }
+  .swiper-button-next {
+    right: 27%;
+    top: 84%;
+  }
+
+  .zodiacSign h3{
+    margin-top: 10px; 
+ }
+  .zodiacSign h3,
+  .zodiacSign p{
+  text-align: center;
+  }
+  #leftDiv{
+    border-radius: 100px 100px 100px 100px;
+  }
+  #rightDiv{
+    border-radius: 100px 100px 100px 100px;
+  }
+  .backEle{
+    margin-right: 20px;
+  }
+
+  .backImg{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .nextEle{
+    margin-left: 20px;
+  }
+  #leftDiv span{
+    font-size: 16px;
+  }
+  
+  #rightDiv span{
+    font-size: 16px;
+  }
+
 }
