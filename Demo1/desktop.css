@@ -1018,7 +1018,7 @@ body {font-family: Arial;}
   }
   
   .jobText{
-    margin-top:-130% ;
+    margin-top:-110% ;
   }
 
   #one{
@@ -1132,7 +1132,7 @@ body {font-family: Arial;}
 
 
   main section.backImage{
-    background-image: url(./圖片/背景物件圖/section1\ background-image\ 2-手機板.jpg);
+    background-image: url(./圖片/背景物件圖/background-image\ 2-手機板_工作區域\ 1.jpg);
     height:100vh;
     width: 100%;
     background-size: cover;
