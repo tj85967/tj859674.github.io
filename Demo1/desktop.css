@@ -962,10 +962,8 @@ body {font-family: Arial;}
     margin: 20px 0;
   }
   .rightAreaText p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 35px;
-    display: flex;
-    justify-content: center;
     padding: 0 25px;
   }
 
