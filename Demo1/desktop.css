@@ -324,7 +324,9 @@ section .star.star8{
 }
 
 .leftAreaImg{
-  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .rightArea{
@@ -955,7 +957,7 @@ body {font-family: Arial;}
   transform: rotateY(180deg);
 }
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1366px){
   .rightAreaText h2{
     margin: 20px 0;
   }
