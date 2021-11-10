@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(./圖片/背景圖片1.jpg) ;
+    background-size: 100%;
+    background-size: cover;
+}
+.rightSideBar{
+    width: 100px;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    margin-top: -2.5em;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(103, 82, 221);
+}
+
+.rightSideBar li{
+    list-style:none;
+    margin-bottom: 15px;
+}
+
+
+.rightSideBar a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.rightSideBar a:hover{
+    color:white;
+}
+
+.icons{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(80,31, 164, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer{
+    width:1200px;
+    display: flex;
+    position: relative;
+}
+.headerContainerMob{
+    display: none;
+}
+
+.headerLogo img{
+    width: 150px;
+    height: auto;
+}
+
+.navButton{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.navButton button{
+    width:50px;
+    height: 50px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(131, 61, 205);
+    border: 2px solid rgb(103, 82, 221);
+}
+
+.navButton button:nth-child(1){
+    margin-right: 10px;
+}
+
+.navButton button:nth-child(2){
+    margin-right: 10px;
+}
+
+
+.sectionSwiper{
+    display: flex;
+    justify-content: center;
+}
+.swiper {
+    width: 1200px;
+    height: 300px;
+  }
+
+.swiper-button-prev {
+    color: white;
+}
+.swiper-button-next{
+    color: white;
+}
+.swiper-slide img{
+    width: 1200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.sectionContent{
+    margin: 0 auto;
+    width: 1200px;
+    border: 1px solid black;
+}
+
+.activityButton{
+    display: flex;
+    justify-content: center;
+}
+
+.activityButton button{
+    width: 150px;
+    height: 70px;
+    margin-top: 80px;
+    font-size: 1.2rem;
+    background-color: rgb(44, 42, 129);
+    border: none;
+    position: relative;
+    display: inline-block;
+    word-spacing: 10px;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.activityButton button:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+    transition-delay:1s ;
+}
+
+.activityButton button a span{
+    position: absolute;
+    display: block;
+}
+
+.activityButton button a span:nth-child(1){
+    top:0;
+    left:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+.activityButton button:hover a span:nth-child(1){
+    left: 100%;
+    transition: 0.5s;
+}
+
+.activityButton button a span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+.activityButton button:hover a span:nth-child(3){
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.activityButton button a span:nth-child(2){
+    top:-100%;
+    right:0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+.activityButton button:hover a span:nth-child(2){
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.activityButton button a span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+
+.activityButton button:hover a span:nth-child(4){
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.75s;
+}
+
+
+.activityButton button a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+
+.activityButton button:nth-child(1){
+    margin-right: 50px;
+}
+
+.activityButton button:nth-child(2){
+    margin-right: 50px;
+}
+
+
+.activity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.activityTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    background: rgb(173,29,178);
+    background: linear-gradient(90deg, rgba(173,29,178,1) 0%, rgba(131,43,189,1) 35%, rgba(68,64,203,1) 70%, rgba(15,84,221,1) 100%);
+    border: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activityContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    border: 1px solid black;
+}
+
+.activityContent img{
+    width: 1000px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0 1px;
+}
+
+.activityContent p{
+    line-height: 25px;
+    word-spacing: 4px;
+}
+
+.activityContentThree{
+    margin-bottom: 40px;
+}
+
+
+.sectionFooter{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.sectionFooterMob{
+    display: none;
+}
+
+
+/* 以下是手機尺寸 */
+@media only screen and (max-width: 450px){
+
+    .headerContainer{
+        display: none;
+    }
+    .rightSideBar{
+        display: none;
+    }
+
+    .headerContainerMob{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .navButton{
+        position: unset;
+    }
+    .menuNav ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    .menu a{
+        text-decoration: none;
+    }
+    .menuNav {
+        width: 30px;
+        position: relative;
+        /* background: #eee; */
+        /* box-shadow: 0px 1px 3px #00000088; */
+    }
+    .menuNav::after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+    input {
+    display: none;
+    }
+    label {
+        float: left;
+        /* padding-left: 50px; */
+        line-height: 100px; 
+    }  
+    label  img {
+    width: 30px;   
+    vertical-align: middle;
+    }
+    .menu{
+    width: 85px;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top:100px;
+    left:0;
+    z-index: 2;
+    clear: both;
+    background:rgb(103, 82, 221);
+    transition: .5s;
+    }
+    .menu li{
+        text-align: center;
+        border-bottom: 1px solid #efefef;
+    }
+    .menu a{
+      display: block;
+      padding: 10px 5px;
+      font-size: 0.85rem;
+      color: black;
+    }
+    .menu img{
+        display: block;
+        margin: 0 auto;
+      }
+    .menu a:hover{
+        background:rgb(131, 61, 205);
+        color: #fff;
+    }
+      input:checked ~ .menu {
+        width: 100px;
+        min-height: 100vh;
+        position: fixed;
+      }
+
+      .sectionContent{
+          width: 90%;
+          margin-bottom: 100px;
+      }
+      .activityButton button{
+          margin-top: 40px
+      }
+      .activityContent{
+        width: 100%;
+    }
+      .activityContent img{
+        height: auto;
+        max-width: 100%;
+    } 
+    .activityContent{
+        border-left: none;
+        border-right: none;
+    }
+    .activityButton button a{
+        font-size: 0.9rem;
+    }
+    .activityButton{
+        padding: 0 20px;
+    }
+    .activityButton button a{
+        letter-spacing: 1px;
+    }
+    .swiper {
+        max-width: 100%;
+        height: auto;
+      }
+      .swiper-slide img{
+        max-width: 100%;
+        height: auto;
+    }
+    .sectionFooter{
+        display: none;
+    }
+    .sectionFooterMob{
+        display: block;
+        width: 100%;
+        height: 100px;
+        border: 1px solid black;
+        position: fixed;
+        bottom: 0;
+        z-index: 5;
+        background-color: rgb(103, 82, 221);
+    }
+    .footerUl{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        height: 100px;
+    }
+
+    .footerUl a{
+        text-decoration: none;
+        color: black;
+    }
+    .footerUl a:hover{
+        color:white;
+    }
+    .footerIcons{
+        display: block;
+        margin: 0 auto;
+        width: 60px;
+        margin-bottom: 3px;
+    }
+    .footerIcons:hover{
+        transform: scale(1.2);
+    }
+    .sectionContent{
+        border-bottom: none;
+    }
+}
